@@ -11,7 +11,7 @@ menu = st.sidebar.selectbox(
 )
 
 
-pytesseract.pytesseract.tesseract_cmd = "C:\Program Files\Tesseract-OCR\tesseract.exe"
+#pytesseract.pytesseract.tesseract_cmd = "C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 st.title("MedSafe AI - Prescription Scanner")
 
@@ -24,4 +24,5 @@ if uploaded_file is not None:
     text = pytesseract.image_to_string(image)
 
     st.subheader("Extracted Text")
+
     st.write(text)
