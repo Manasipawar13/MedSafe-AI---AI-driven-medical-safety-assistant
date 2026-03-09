@@ -1,4 +1,5 @@
 import pytesseract
+pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
 from PIL import Image
 
 
@@ -10,3 +11,4 @@ def extract_text_from_image(uploaded_file):
 
 
     return text
+
